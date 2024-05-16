@@ -38,6 +38,49 @@ toggleScrollToTopButton();
 
 
 
+ // Function to toggle mobile menu
+ function toggleMobileMenu() {
+  var mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+  var mobileMenuMain = document.querySelector('.mobile-menu-main');
+
+  mobileMenuOverlay.classList.toggle('active');
+  mobileMenuMain.classList.toggle('active');
+}
+
+// Function to close mobile menu
+function closeMobileMenu() {
+  var mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+  var mobileMenuMain = document.querySelector('.mobile-menu-main');
+
+  mobileMenuOverlay.classList.remove('active');
+  mobileMenuMain.classList.remove('active');
+}
+
+// Event listener for menu icon click
+document.querySelector('.bars i').addEventListener('click', function() {
+  toggleMobileMenu();
+});
+
+// Event listener for close button and overlay click
+document.querySelectorAll('.close-mobile-menu, .mobile-menu-overlay').forEach(function(element) {
+  element.addEventListener('click', function() {
+      closeMobileMenu();
+  });
+});
+
+// Event listener for submenu click
+document.querySelectorAll('.sub-mobile-menu a').forEach(function(element) {
+  element.addEventListener('click', function(event) {
+      var submenu = event.target.nextElementSibling;
+      submenu.style.display = (submenu.style.display === 'none' || submenu.style.display === '') ? 'block' : 'none';
+      event.target.querySelector('.right').classList.toggle('fa-caret-up');
+      event.target.querySelector('.right').classList.toggle('fa-caret-down');
+  });
+});
+
+
+
+
 // ;(function($) {
 //     "use strict";
 
