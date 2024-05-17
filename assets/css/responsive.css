@@ -1,3 +1,9 @@
+@media (min-width:1400px) and (max-width:1799.98px) {
+  .container{
+    padding: 0 40px;
+  }
+}
+
 @media(max-width:1399.98px) {
   .main-menu li {
     margin-left: 42px;
