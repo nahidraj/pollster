@@ -1,5 +1,5 @@
 @media (min-width:1400px) and (max-width:1799.98px) {
-  .container{
+  .container {
     padding: 0 40px;
   }
 }
@@ -56,6 +56,12 @@
 
   .footer-area .footer-btm .text p {
     padding-right: 70px;
+  }
+
+  .case-study-area .item .title {
+    font-size: 26px;
+    line-height: 41px;
+    margin-bottom: 21px;
   }
 }
 
@@ -194,6 +200,27 @@
   .dlaczego-area {
     padding-top: 80px;
   }
+
+  .header-transparent {
+    background-color: #1C1A5B;
+  }
+
+  .header-section {
+    padding: 4px 0;
+  }
+
+  .mobile-menu-area .mobile-menu-main .close-mobile-menu i {
+    color: #fff;
+  }
+
+  .bread-crumb-area {
+    padding-top: 140px;
+    padding-bottom: 62px;
+  }
+
+  .bread-crumb-area .text .title {
+    font-size: 44px;
+  }
 }
 
 @media(max-width:767.98px) {
@@ -263,5 +290,25 @@
   .footer-area .footer-btm .text a {
     display: block;
     margin-top: 7px;
+  }
+
+  .bread-crumb-area .text .title {
+    font-size: 32px;
+  }
+
+  .bread-crumb-area .text p {
+    font-size: 17px;
+  }
+
+  .bread-crumb-area ul {
+    margin-bottom: 10px;
+  }
+
+  .case-study-area .item {
+    padding: 26px 25px 35px;
+  }
+
+  .case-study-area .item .title {
+    font-size: 22px;
   }
 }
